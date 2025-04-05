@@ -12,39 +12,34 @@ public class ProjectCode {
         int Sugar = scan.nextInt();
 
         System.out.println("Price of Rice");
-        Scanner Scan1 = new Scanner(System.in);
         int Rice = scan.nextInt();
 
         System.out.println("Price of Cashews");
-        Scanner Scan2 = new Scanner(System.in);
         int Cashews = scan.nextInt();
 
         System.out.println("Price of Almonds");
-        Scanner Scan3 = new Scanner(System.in);
         int Almonds = scan.nextInt();
 
         System.out.println("Price of Walnut");
-        Scanner Scan4 = new Scanner(System.in);
         int Walnut = scan.nextInt();
 
-        int a = (Sugar + Rice + Cashews + Almonds + Walnut);
-        System.out.println("Total purchase amount = " + a);
+        int total_amount = Sugar + Rice + Cashews + Almonds + Walnut;
+        System.out.println("Total purchase amount = " + total_amount);
 
-        System.out.println("Amount received = ");
-        Scanner Scan5 = new Scanner(System.in);
+        System.out.println("Amount received from the customer = ");
         int Cash_received = scan.nextInt();
 
-        int b = Cash_received - a;
-        System.out.println("Change amount to be given back : " + b);
+        int change = Cash_received - total_amount;
+        System.out.println("Change amount to be given back : " + change);
 
-        if (b < 0) {
+        if (change < 0) {
             System.out.println("Insufficient funds");
-        } else if (b == 0) {
+        } else if (change == 0) {
             System.out.println("No change to be given back");
         } else {
-            System.out.println("Change amount : " + b);
+            System.out.println("Change amount : " + change);
         }
-        calculateChange(b);
+        calculateChange(change);
     }
           public static void calculateChange(int b)
         {
