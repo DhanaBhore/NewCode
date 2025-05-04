@@ -2,7 +2,7 @@ package mycodes;
 
 import java.util.Scanner;
 
-public class InchesToMeters {
+public class InchesToMtres {
     public static void main(String[] args) {
         System.out.println("Input Inches : ");
 
