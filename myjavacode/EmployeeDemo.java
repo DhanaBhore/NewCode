@@ -3,9 +3,9 @@ package myjavacode;
 public class EmployeeDemo {
     public static void main(String[] args) {
         Employee e1 = new Employee();
-e1.setEmpId(1);
-e1.setName("Dhanashri");
-e1.setSalary(60000);
+        e1.setEmpId(1);
+        e1.setName("Dhanashri");
+        e1.setSalary(60000);
 
         System.out.println("Salary is : "+e1.getSalary());
     }

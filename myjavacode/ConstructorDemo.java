@@ -20,9 +20,8 @@ class Car{
     private String Name;
 
     Car(int Model, String Name){
-setModel(Model);
-setName(Name);
-
+        setModel(Model);
+        setName(Name);
         }
 
     public int getModel() {
