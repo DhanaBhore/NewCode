@@ -23,10 +23,11 @@ public class ThreeLoopDemo {
         System.out("I am out of loop");
 }*/
 
-class ForLoopDemo{
+/*class ForLoopDemo{
        for(int i = 0; i<=10; i++)
 
     {
         System.out.println("Hello " + i);
     }
         }
+*/
