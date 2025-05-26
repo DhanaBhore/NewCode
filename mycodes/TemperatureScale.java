@@ -6,16 +6,10 @@ public class TemperatureScale {
 
     public static void main(String[] args) {
 
-        System.out.println("Input : ");
+        String s1 = new String("Java");
+        String s2 = new String("java");
 
-        Scanner scan = new Scanner(System.in);
 
-        double Meters = scan.nextInt();
-
-        double Inch = 0.0254;
-
-        double M = (Meters*Inch);
-
-        System.out.println("Your answer is : " + M);
+        System.out.println(s1 == s2);
     }
 }
