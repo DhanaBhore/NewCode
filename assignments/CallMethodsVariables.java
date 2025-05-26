@@ -1,21 +1,12 @@
 package assignments;
 
-class Human {
-
-    String Name;
-    int Height;
-    int Weight;
-
-    void Walk(){
-
-    }
-    void talk(String words){
-
-    }
-}
-
 class Mobilephone{
 
+    public static void main(String[] args) {
+        Human1 h1 = new Human1();
+        h1.talk("Hello");
+        System.out.println(h1);
+    }
     int height;
     int width;
     String brand_name;
@@ -27,7 +18,7 @@ class Mobilephone{
 
 
     void calling(String receiver){
-
+        System.out.println("I am calling ");
     }
 
     void messaging(String receiver){
@@ -55,8 +46,29 @@ class Mobilephone{
     }
 }
 
-class Desktop {
+class Human1 {
+    public static void main(String[] args) {
+        Mobilephone m = new Mobilephone();
+        m.calling("Mom");
+    }
+    String Name;
+    int Height;
+    int Weight;
 
+    public void Walk(){
+
+    }
+    void talk(String words){
+        System.out.println("I am learning Java");
+    }
+}
+
+class Desktop {
+    public static void main(String[] args) {
+        COllege c = new COllege();
+        c.learn("Maths");
+        c.play("Badminton");
+    }
     int Display_size;
     int height;
     int width;
@@ -75,6 +87,7 @@ class Desktop {
 }
 
 class COllege{
+
     String Name;
     String Career_branches;
     int no_of_professors;
@@ -82,41 +95,10 @@ class COllege{
     int noOfSportsPlayed;
 
     void learn(String SubjectName){
-
+        System.out.println("I am learning Mathematics");
     }
     void play( String sport){
-
-    }
-}
-
-
-class TestSuite{
-    int NoOfTestScenarios;
-    int NoOfTestCases;
-    String TypeOfTestScript;
-
-    void run(int NoOfTestScenarios){
-
-    }
-}
-
-
-class TestCase{
-
-    int noOfSteps;
-
-    void run(int noOfSteps){
-
-    }
-}
-
-
-class TestStep{
-
-    int noOfSteps;
-
-    void run (int noOfSteps){
-
+        System.out.println("I am playing Badminton");
     }
 }
 
@@ -134,6 +116,11 @@ class Bike {
 
 
 class Refridgerator {
+    public static void main(String[] args) {
+        TrolleyBag tb = new TrolleyBag();
+        tb.carry_luggage();
+        tb.storage("clothes");
+    }
     int volume;
     int no_of_doors;
     String brand;
@@ -153,14 +140,19 @@ class TrolleyBag {
     int no_of_chains;
 
     void carry_luggage(){
-
+        System.out.println("I am on a world tour");
     }
-    void storage(String iten_name){
-
+    void storage(String item_name){
+        System.out.println("clothes");
     }
 }
 
 class Mirror {
+    public static void main(String[] args) {
+        GasStove gs = new GasStove();
+        gs.cooking("Rice");
+
+    }
     int height;
     int width;
     String shape;
@@ -181,8 +173,6 @@ class GasStove {
     String name_of_company;
 
     void cooking(String food){
-
+        System.out.println("Rice");
     }
-
-
 }
