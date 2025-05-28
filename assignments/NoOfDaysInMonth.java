@@ -9,7 +9,7 @@ public class NoOfDaysInMonth {
 
         Scanner scan = new Scanner(System.in);
 
-        //String MonthName = "";
+
         int MonthNumber = scan.nextInt();
 
 
